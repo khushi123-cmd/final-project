@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: my_site_app
+    ports:
+      - "6080:80"
+    volumes:
+      - .:/app
